@@ -1,0 +1,2 @@
+username|email|password|first_name|last_name|age|twitch|discord|steam|coin|role
+gabriel123|wisdom56@yopmail.com|83ce1624bce7340e95e94837f149c0eaadbd711485e525bbd144a2c95856daae|Gabriel|Imade|17|gab_stream|gab1234|gabsteam||gamer

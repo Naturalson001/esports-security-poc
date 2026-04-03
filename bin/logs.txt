@@ -1,0 +1,10 @@
+[2026-04-02 13:33:26] [WARNING] [fetch_all_users] Invalid line skipped: test|wisdom56@yopmail.com|2014764b2881da1b244b1af0cac349824e1cacd3605f5ae80f63be4120c41c24|string|string|17string|string|string|None
+[2026-04-02 13:33:26] [INFO] [fetch_all_users] 0 users loaded successfully
+[2026-04-02 13:44:11] [INFO] [fetch_all_users] 1 users loaded successfully
+[2026-04-02 13:59:20] [INFO] [fetch_all_users] 1 users loaded successfully
+[2026-04-02 14:33:55] [INFO] [OtpService.send_login_otp] OTP generated for wisdom56@yopmail.com
+[2026-04-02 14:33:57] [ERROR] [EmailService._send_email] 'ascii' codec can't encode character '\xa9' in position 1864: ordinal not in range(128)
+[2026-04-02 14:39:20] [INFO] [OtpService.send_login_otp] OTP generated for wisdom56@yopmail.com
+[2026-04-02 14:44:55] [INFO] [OtpService.send_login_otp] OTP generated for wisdom56@yopmail.com
+[2026-04-02 15:48:48] [INFO] [OtpService.send_login_otp] OTP generated for wisdom56@yopmail.com
+[2026-04-02 15:49:25] [INFO] [OtpService.send_login_otp] OTP generated for wisdom56@yopmail.com
