@@ -1,11 +1,13 @@
 from fastapi import APIRouter
+
+from infrastructure.database import get_user_by_email
 from services.auth_service import AuthService
 from models.user_model import UserModel
 from models.login_model import LoginModel
 from models.otp_model import OtpModel
 from services.otp_service import OtpService
 
-router = APIRouter(prefix="/v1/auth")
+router = APIRouter(prefix="/my-auth")
 
 otp_service = OtpService()
 auth_service = AuthService(otp_service)
@@ -22,6 +24,7 @@ def login(data: LoginModel):
 def verify(data: OtpModel):
     return auth_service.verify_login(data)
 
-@router.get("/get-users")
-def get_users():
-    return auth_service.get_all_users()
+@router.get("/users")
+def get_users(email: str):
+    current_user = get_user_by_email(email)
+    return auth_service.get_all_users(current_user)
