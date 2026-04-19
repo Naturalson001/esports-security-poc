@@ -103,23 +103,28 @@ class AuthService:
                 "status": 200
             }
 
-    def get_all_users(self):
-        users = fetch_all_users()
-
-        if not users:
+    def get_all_users(self, current_user):
+        if not current_user:
             return {
                 "success": False,
-                "errors": ["No users found"],
+                "errors": ["User not found"],
                 "status": 404
             }
+
+        if current_user["role"].lower() != "admin":
+            return {
+                "success": False,
+                "errors": ["Access denied"],
+                "status": 403
+            }
+
+        users = fetch_all_users()
 
         return {
             "success": True,
             "data": users,
             "status": 200
         }
-
-
 
 
 

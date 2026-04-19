@@ -1,2 +1,6 @@
 username|email|password|first_name|last_name|age|twitch|discord|steam|coin|role
 gabriel123|wisdom56@yopmail.com|83ce1624bce7340e95e94837f149c0eaadbd711485e525bbd144a2c95856daae|Gabriel|Imade|17|gab_stream|gab1234|gabsteam||gamer
+username|email|password|first_name|last_name|age|twitch|discord|steam|coin|role
+23134463|gabriel@yopmail.com|f722b89649be0b368128bd2b3ef91d8ad91e6f1ae4675dc99230b6c049441a85|Ayevbosa|imade|15|string|string|string|string|gamer
+username|email|password|first_name|last_name|age|twitch|discord|steam|coin|role
+Richard$#E14|richardward@yopmail.com|6c723459f6e81ea69e620f0e96f569390294dbfda6b3c7db8d5c3b83a4b514b3|Richard|Ward|50|string|string|string|string|admin

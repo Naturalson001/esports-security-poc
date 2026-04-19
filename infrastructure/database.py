@@ -40,6 +40,7 @@ def get_user_by_email(email):
                         "username": parsed_line[0],
                         "email": parsed_line[1],
                         "password": parsed_line[2],
+                        "role": parsed_line[10]
                     }
             return  None
 

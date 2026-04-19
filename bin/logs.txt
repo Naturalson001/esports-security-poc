@@ -8,3 +8,6 @@
 [2026-04-02 14:44:55] [INFO] [OtpService.send_login_otp] OTP generated for wisdom56@yopmail.com
 [2026-04-02 15:48:48] [INFO] [OtpService.send_login_otp] OTP generated for wisdom56@yopmail.com
 [2026-04-02 15:49:25] [INFO] [OtpService.send_login_otp] OTP generated for wisdom56@yopmail.com
+[2026-04-19 22:22:01] [INFO] [OtpService.send_login_otp] OTP generated for gabriel@youmail.com
+[2026-04-19 22:25:06] [INFO] [OtpService.send_login_otp] OTP generated for gabriel@yopmail.com
+[2026-04-19 22:32:19] [INFO] [fetch_all_users] 5 users loaded successfully

@@ -5,7 +5,7 @@ from infrastructure.database import get_user_by_email
 from Helpers.hashing import HashedData
 
 FILE_PATH = "data/Spring_2026_USW_Cyber_Esports_PoC.txt"
-INVALID_CHARACTER = r"^[a-zA-Z0-9_]+$"
+INVALID_CHARACTER = r"^[a-zA-Z0-9_]+"
 EMAIL_PATTERN = r"^[\w\.-]+@[\w\.-]+\.\w+$"
 
 
@@ -63,7 +63,7 @@ class UserValidator:
 
         for key in ["uppercase", "lowercase", "numbers", "symbols"]:
             if counts[key] < rules[key]:
-                errors.append(f"Must contain at least {rules[key]} {key}")
+                errors.append(f"Password Must contain at least {rules[key]} {key}")
 
         return errors
 
