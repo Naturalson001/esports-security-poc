@@ -88,3 +88,42 @@ def fetch_all_users():
     except Exception as e:
         log(e, "fetch_all_users", "CRITICAL")
         return []
+    
+def update_user_score(email, coin):
+    try:
+        updated_lines = []
+        found = False
+
+        with open(FILE_PATH, "r") as file:
+            for i, line in enumerate(file):
+
+                parsed_line = line.strip().split("|")
+
+                if i == 0:
+                    updated_lines.append(line)
+                    continue
+
+                if len(parsed_line) < 11:
+                    updated_lines.append(line)
+                    continue
+
+                stored_email = parsed_line[1].strip().lower()
+
+                if stored_email == email.lower().strip():
+                    parsed_line[9] = str(coin)
+                    found = True
+
+                updated_lines.append("|".join(parsed_line) + "\n")
+
+        if not found:
+            return False
+
+        with open(FILE_PATH, "w") as file:
+            file.writelines(updated_lines)
+
+        return True
+
+    except Exception as e:
+        log(e, "update_user_score", "ERROR")
+        return False
+
