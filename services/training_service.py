@@ -1,3 +1,5 @@
+from infrastructure.database import update_user_score
+
 class TrainingService:
 
     def __init__(self):
@@ -13,6 +15,16 @@ class TrainingService:
 
         print(f"\n✅ Training Completed! Your Score: {self.score}\n")
 
+        print(f"\n✅ Please enter your email to save your point")
+
+        email = input("Email: ").strip()
+
+        result = update_user_score(email, self.score)
+
+        if result:
+            print("✅ Score updated successfully")
+        else:
+            print("❌ Email not found")
 
     def password_security(self):
         print("🔐 PASSWORD SECURITY")

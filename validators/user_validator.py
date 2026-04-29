@@ -149,7 +149,7 @@ class UserValidator:
         user = get_user_by_email(login_model.email)
 
         if not user:
-            errors.append("Email is not valid")
+            errors.append("Email does't exit")
             return errors
 
         if not HashedData.verify_data(
